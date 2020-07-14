@@ -6,8 +6,10 @@ public class GameManager : MonoBehaviour
 {
 
     bool gameHasEnded = false;
-    public float restartDelay = 2f;
+    public float restartDelay = 1f;
     public GameObject completeLevelUI;
+    public GameObject collisionUIElement;
+    public float timeSlow = .3f;
 
 
     public void EndGame()
@@ -15,6 +17,8 @@ public class GameManager : MonoBehaviour
         if(gameHasEnded == false) {
             Debug.Log("Game Over");
             gameHasEnded = true;
+            Time.timeScale = timeSlow;
+            collisionUIElement.SetActive(true);
             Invoke("Restart", restartDelay);
 
         }

@@ -4,7 +4,8 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
     public PlayerMovement movement;
-    // Start is called before the first frame update
+        // Start is called before the first frame update
+   
     private void OnCollisionEnter(Collision collisionInfo)
     {
         if(collisionInfo.collider.tag == "Obstacle")
@@ -13,4 +14,6 @@ public class PlayerCollision : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame();
         }
     }
+
+    
 }
