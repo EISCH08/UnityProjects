@@ -63,17 +63,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BackGroundMovement.cs" />
+    <Compile Include="Assets\MenuNavigation.cs" />
+    <Compile Include="Assets\Scripts\BackGroundMovement.cs" />
     <Compile Include="Assets\Scripts\EndTrigger.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\LevelComplete.cs" />
+    <Compile Include="Assets\Scripts\ObjectSpawner.cs" />
     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\SideCubeMovement.cs" />
     <Compile Include="Assets\Scripts\UI\PauseScreen.cs" />
     <Compile Include="Assets\Scripts\UI\Score.cs" />
     <Compile Include="Assets\Scripts\UI\TimeText.cs" />
-    <Compile Include="Assets\SideCubeMovement.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -603,31 +605,31 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.3f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/parke/Desktop/Unity/UnityProjects/MyFirstGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/parke/Desktop/UnityProjects/MyFirstGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/parke/Desktop/Unity/UnityProjects/MyFirstGame/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/parke/Desktop/UnityProjects/MyFirstGame/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/parke/Desktop/Unity/UnityProjects/MyFirstGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/parke/Desktop/UnityProjects/MyFirstGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/parke/Desktop/Unity/UnityProjects/MyFirstGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/parke/Desktop/UnityProjects/MyFirstGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/parke/Desktop/Unity/UnityProjects/MyFirstGame/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/parke/Desktop/UnityProjects/MyFirstGame/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/parke/Desktop/Unity/UnityProjects/MyFirstGame/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/parke/Desktop/UnityProjects/MyFirstGame/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/parke/Desktop/Unity/UnityProjects/MyFirstGame/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/parke/Desktop/UnityProjects/MyFirstGame/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/parke/Desktop/Unity/UnityProjects/MyFirstGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/parke/Desktop/UnityProjects/MyFirstGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/parke/Desktop/Unity/UnityProjects/MyFirstGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/parke/Desktop/UnityProjects/MyFirstGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

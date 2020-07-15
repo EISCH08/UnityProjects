@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class LevelComplete : MonoBehaviour
@@ -13,7 +12,7 @@ public class LevelComplete : MonoBehaviour
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
-    IEnumerator LoadLevel(int levelIndex)
+    public IEnumerator LoadLevel(int levelIndex)
     {
         transition.SetTrigger("Start");
 

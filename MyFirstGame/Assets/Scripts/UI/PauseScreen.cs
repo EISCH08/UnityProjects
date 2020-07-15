@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseScreen : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class PauseScreen : MonoBehaviour
 
     public static bool gameIsPaused = false;
     public GameObject pauseMenuUI;
+    public Animator transition;
+    public float transitionTime = 1f;
+    public LevelComplete quitGame;
     // Update is called once per frame
     private void Update()
     {
@@ -40,5 +44,13 @@ public class PauseScreen : MonoBehaviour
     public void QuitGame()
     {
         Debug.Log("QUITING GAME");
+        SceneManager.LoadScene("Scenes/Menu");
+        Time.timeScale = 1f;
+
     }
+
+
+
+
+
 }

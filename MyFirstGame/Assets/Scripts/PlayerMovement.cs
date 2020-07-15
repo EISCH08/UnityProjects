@@ -8,6 +8,9 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     public float forwardForce = 2000f;
     public float sidewaysForce = 500f;
+    public float jumpForce = 500f;
+    private bool playerJumped = false;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +21,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(transform.position.y <= 1.1)
+        {
+            playerJumped = false;
+        }
         if (Input.GetKey("w"))
         {
             rb.AddForce(0, 0, forwardForce * Time.deltaTime);
@@ -38,6 +45,16 @@ public class PlayerMovement : MonoBehaviour
         {
             FindObjectOfType<GameManager>().EndGame();
         }
+        if (Input.GetKey("space"))
+        {
+            if (playerJumped == false)
+            {
+                Debug.Log("Player Jumped");
+               rb.AddForce(0, jumpForce * Time.deltaTime,0);
+                playerJumped = true;
+            }
+        }
+
         
 
     }
